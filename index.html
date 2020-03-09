@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms_for_contact_list</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Raleway:400,500,600,700,800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="new_user">
+   
+    <!-- //navbar -->
+    <div class="navbar">
+      <a href="#">
+        <img src="image/logo_final-2 copy.png" alt="">
+      </a>
+        <ul class="navbar_icons">
+          <li>
+            <a href="#" id="notification_btn" class="notification" >
+                <img src="image/notifications_none-24px.svg" alt="">
+            </a>
+            <ul class="notification_subclass" id="notification_list">
+                <li><a href="#">no notification</a></li>
+            </ul>
+          </li>
+          <li>
+            <img src="image/icons/Ellipse 13.png" alt="">
+          </li>
+          <li class="dropdown">Amy Dan
+            <p>Abc.ltd</p>
+            <ul class="subclass" id="dropdown_list">
+              <li><a href="#">Status : <span style="color: #36AF47;">Online</span></a></li>
+              <li><a href="#">Account Settings</a></li>
+              <li><a href="#">Help & Feedback</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="angle_down">
+              <a href="#" id="dropdown_btn" class="clicked"><i style="color: white;" class="fas fa-angle-down"></i></a>
+          </li>
+        </ul>      
+    </div>
+    <!-- //navbar -->
+  
+    <div class="main_section">
+      <div class="sidebar_left">
+        <ul>
+          <li><a href="#" onclick="openSideMenu()"><i class="fas fa-bars"></i></a></li>
+          <li><a href="#"><img src="image/icons/manage camapign.svg" alt=""></a></li>
+          <li><a href="#"><img src="image/icons/dashboard enable.png" alt=""></a></li>
+          <li><a href="#"><img src="image/icons/contact list.svg" alt=""></a></li>
+          <li><a href="#"><img src="image/icons/mis analytics.svg" alt=""></a></li>
+          <li><a href="#"><img src="image/icons/user management.svg" alt=""></a></li>
+          <li><a href="#"><img src="image/icons/user services.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div id="side-menu" class="side-nav">
+        <ul>
+          <li>
+              <i class="fas fa-bars" onclick="closeSideMenu()"></i>
+          </li>
+          <li class="active">
+            <div class="align">
+              <div>
+                <img src="image/layer14.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">Dashboard</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/noun_id_1381710 (1).svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">Subscribe Services</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/icons/contact list.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">Contact List</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/icons/manage camapign.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">Manage Campaign</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/icons/mis analytics.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">MIS Analytics</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/icons/user management.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">User Management</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/icons/user services.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">User Services</a>
+            </div>
+          </li>
+          <li >
+            <div class="align">
+              <div>
+                <img src="image/icons/user services.svg" alt="">
+              </div>
+              <a href="#" class="btn-close active">Sender Id</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="manage_campaign_right" onclick="closeSideMenu()">
+          
+        <h1>Create Campaign</h1>
+
+        <section>
+          <ol class="progress-bar">
+            <li class="is-complete is-hovered"><span></span></li>  
+            <li class="is-complete is-hovered"><span>Create Campaign</span></li>  
+            <li class="is-complete is-hovered"><span>Campaign Sets</span></li>  
+            <li class="is-complete is-hovered"><span>Message</span></li>  
+            <li class="is-complete is-hovered"><span>Contacts</span></li>  
+            <li class="is-complete is-hovered"><span></span></li>
+          </ol>
+        </section>
+      
+
+        <div class="search_page">
+          <!-- first -->
+          <div class="campaign_name">
+            <div class="">
+              <label for="campaign name">Campaign name</label><br>
+              <input type="text" name="" placeholder="Enter your campaign name..." id="">
+            </div>
+            <div>
+              <label for="sender id">Sender id</label><br>
+              <input type="number" name="" id="" placeholder="Enter your sender id...">
+            </div>
+          </div>
+
+                    <!-- second -->
+                    <div class="campaign_schedule">
+                      <h2>Campaign Schedule</h2>
+                      <div class="campaign_schedule_items">
+                        <div class="radio_items" >
+                          <div>
+                            <label for="campaign name">Runs Campaigns all the time</label>
+                            <input type="radio" name="" id="">
+                          </div>
+                          <div style="margin-top: 20px;">
+                            <label for="sender id">Runs Campaigns on a Schedule</label>
+                            <input type="radio" name="" id="">
+                          </div>
+                        </div>
+                        <div class="startdate">
+                          <label for="start_date">Start Date</label>
+                          
+                          <div class="date-picker">
+                            <div class="selected-date"></div>
+                        
+                            <div class="dates">
+                              
+                              <div class="month">
+                                <div class="arrows prev-mth"><i class="fas fa-angle-left"></i></div>
+                                <div class="mth"></div>
+                                <div class="arrows next-mth"><i class="fas fa-angle-right"></i></div>        
+                              </div>
+                        
+                              <div class="days">
+                                <div class="day">1</div>
+                                <div class="day">2</div>
+                                <div class="day">3</div>
+                                <div class="day">4</div>
+                                <div class="day">5</div>
+                                <div class="day">6</div>
+                                <div class="day">7</div>
+                              </div>
+                           
+                            </div>
+                        
+                          </div>
+                        
+                        </div>
+                        
+                        <div class="enddate">
+                          <label for="End_date">End Date</label>
+                          <div class="date-picker-two">
+                            <div class="selected-date-two"></div>
+                        
+                            <div class="dates-two">
+                              
+                              <div class="month-two">
+                                <div class="arrows-two prev-mth-two"><i class="fas fa-angle-left"></i></div>
+                                <div class="mth-two"></div>
+                                <div class="arrows-two next-mth-two"><i class="fas fa-angle-right"></i></div>        
+                              </div>
+                        
+                              <div class="days-two">
+                                <div class="day-two">1</div>
+                                <div class="day-two">2</div>
+                                <div class="day-two">3</div>
+                                <div class="day-two">4</div>
+                                <div class="day-two">5</div>
+                                <div class="day-two">6</div>
+                                <div class="day-two">7</div>
+                              </div>
+                           
+                            </div>
+                        
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!-- third -->
+                    <div class="service_type">
+                      <div class="service_type_items">
+                        
+                        <div class="service_type_list">
+                          <h2>Service type</h2>
+                          <div class="custom-select-wrapper-service">
+                            <div class="custom-select-service">
+                              <div class="custom-select__trigger-service"><span>Select</span>
+                                <div class="arrow-service"></div>
+                              </div>
+                              <div class="custom-options-service">
+                                <span class="custom-option-service selected-service" data-value="tesla">Select</span>
+                                <span class="custom-option-service" data-value="volvo">Select</span>
+                                <span class="custom-option-service" data-value="mercedes">Select</span>
+                              </div>
+                            </div>
+                          </div>              
+                        </div>
+                        
+                        <div class="service_type_list">
+                          <h2>Template</h2>
+                          <div class="custom-select-wrapper-template">
+                            <div class="custom-select-template">
+                              <div class="custom-select__trigger-template"><span>Select</span>
+                                <div class="arrow-template"></div>
+                              </div>
+                              <div class="custom-options-template">
+                                <span class="custom-option-template selected-template" data-value="tesla">Select</span>
+                                <span class="custom-option-template" data-value="volvo">Select</span>
+                                <span class="custom-option-template" data-value="mercedes">Select</span>
+                              </div>
+                            </div>
+                          </div>              
+                        </div>
+          
+                        <div class="service_type_list">
+                          <h2>Upload</h2>
+                          <div class="custom-select-wrapper-upload">
+                            <div class="custom-select-upload">
+                              <div class="custom-select__trigger-upload"><span>Select</span>
+                                <div class="arrow-upload"></div>
+                              </div>
+                              <div class="custom-options-upload">
+                                <span class="custom-option-upload selected-upload" data-value="tesla">Select</span>
+                                <span class="custom-option-upload" data-value="volvo">Select</span>
+                                <span class="custom-option-upload" data-value="mercedes">Select</span>
+                              </div>
+                            </div>
+                          </div>              
+                        </div>
+
+                        <div class="service_type_list">
+                          <h2>Language</h2>
+                          <div class="custom-select-wrapper-language">
+                            <div class="custom-select-language">
+                              <div class="custom-select__trigger-language"><span>Select</span>
+                                <div class="arrow-language"></div>
+                              </div>
+                              <div class="custom-options-language">
+                                <span class="custom-option-language selected-language" data-value="tesla">Select</span>
+                                <span class="custom-option-language" data-value="volvo">Select</span>
+                                <span class="custom-option-language" data-value="mercedes">Select</span>
+                              </div>
+                            </div>
+                          </div>              
+                        </div>
+          
+                      </div>
+                    </div>
+
+                    <!-- four -->
+                    <div class="type_message">
+                      <h2>Message</h2>
+          
+                      <div class="type_message_text">
+                        <div class="type_message_textarea">
+                          <textarea name="" id="" rows="20" placeholder="Type message here..."></textarea>
+                          <p>Characters length : <strong>200</strong></p>
+                        </div>
+                        <div class="mobile_icon">
+                          <img src="image/mob.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- five -->
+
+                    <div class="contact_list">
+                      <div class="contact_list_top">
+                        <h3>Select contact list</h3>
+                        <form action="" class="search_form">
+                          <input type="text" class="searchTerm" name="search" placeholder="Search by list, name, date">
+                          <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                         </button>
+                      </form>
+                      </div>
+                      <div class="contact_list_items">
+          
+                        <table>
+                          <tr>
+                            <th><input type="checkbox"></th>
+                            <th>LIST NAME</th>
+                            <th>NO. OF CONTACTS</th>
+                            <th>CREATED</th>
+                          </tr>
+                            <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>                  
+                            <td>Test</td>
+                            <td class="openSans">20</td>
+                            <td class="openSans">08/21/2014</td>
+                          </tr>
+                        </table>
+                        <a href="">Show more</a>
+                      </div>
+                    </div>
+
+                    <div class="submit_btn">
+                      <button class="active">CREATE CAMPAIGN</button>
+                      <button>CANCEL</button>
+                    </div>
+
+        </div>
+
+    
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
